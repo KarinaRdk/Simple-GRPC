@@ -1,0 +1,17 @@
+syntax = "proto3";
+package transmitter; 
+
+option go_package = "/proto";
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/empty.proto";
+
+service Transmitter {
+    rpc GetEntry(google.protobuf.Empty) returns (stream Entry);
+}
+//  The " = 1", " = 2" markers on each element identify the unique “tag” that field uses in the binary encoding.
+
+message Entry {
+   string session_id = 1;
+   double frequency = 2; 
+   google.protobuf.Timestamp timestamp = 3;
+}
