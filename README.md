@@ -2,13 +2,6 @@
 # Description
 The GPRS Data Transmission and Analysis System is a Go-based application designed to transmit and analyze frequency data over a network. It utilizes gRPC for efficient and secure communication between a client and a server, with the client processing and storing the transmitted data in a PostgreSQL database. This system aims to demonstrate the capabilities of gRPC, PostgreSQL, and Go for building scalable and efficient data transmission and analysis solutions.
 
-# Prerequisites
-Go 1.16 or higher
-
-PostgreSQL 13 or higher
-
-gRPC and Protocol Buffers
-
 # Steps
 Clone the repository to your local machine.
 
